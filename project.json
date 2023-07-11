@@ -1,0 +1,8 @@
+{
+  "slug": "prompt-template-guard",
+  "title": "Strict prompt-template renderer",
+  "description": "Renders a declared set of simple placeholders, rejects attribute/index traversal, conversions, nested format specifications, undeclared fields, and missing/extra variables. Values are rendered once, so braces inside a value cannot introduce another placeholder. This prevents template misuse; it does not make untrusted text safe from prompt injection in a future model call.",
+  "category": "agents",
+  "demo_args": [],
+  "expected_exit": 0
+}
