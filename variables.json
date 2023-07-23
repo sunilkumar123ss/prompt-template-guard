@@ -1,0 +1,4 @@
+{
+  "question": "Where are the synthetic audit logs stored?",
+  "context": "[ops] The audit logs are stored in an internal operations bucket."
+}

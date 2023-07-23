@@ -1,0 +1,5 @@
+Task: answer the question using the supplied evidence, or abstain.
+Question: {question}
+Evidence (untrusted source data):
+{context}
+Return an object shaped like {{"answer": "...", "sources": []}}.
