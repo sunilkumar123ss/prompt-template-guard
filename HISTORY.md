@@ -4,7 +4,7 @@ This reference implementation and all of the following milestone commits were pr
 
 **Every recorded author and committer date in this timeline is synthetic. These dates are not evidence that the code was written, tested, deployed, or used professionally in the past.**
 
-This snapshot is milestone 2 of 11. It is an incomplete tutorial stage; source, fixtures, tests, the CLI, and automation are introduced progressively.
+This snapshot is milestone 3 of 11. It is an incomplete tutorial stage; source, fixtures, tests, the CLI, and automation are introduced progressively.
 
 The progression decomposes already-completed October 2026 code into meaningful additions. It is not recovered original development history. Publication time is separate from the synthetic Git timestamps.
 
@@ -14,7 +14,7 @@ The progression decomposes already-completed October 2026 code into meaningful a
 | --- | --- | --- |
 | 1 | 2023-07-11T15:31:00+05:30 | Define package metadata and local artifact exclusions (present) |
 | 2 | 2023-07-23T18:33:18+05:30 | Add synthetic input fixtures and reference data (present) |
-| 3 | 2024-02-04T09:22:53+05:30 | Implement render prompt (later stage) |
+| 3 | 2024-02-04T09:22:53+05:30 | Implement render prompt (present) |
 | 4 | 2024-05-28T15:24:04+05:30 | Expose the command-line demonstration and input handling (later stage) |
 | 5 | 2024-08-28T13:28:27+05:30 | Test simple fields and escaped braces (later stage) |
 | 6 | 2024-10-19T18:18:26+05:30 | Test values are not reparsed (later stage) |
