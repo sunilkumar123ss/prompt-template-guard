@@ -29,3 +29,15 @@ def render_prompt(template,variables,allowed):
         raise ValueError("all values must be strings")
     return template.format_map(variables)
 
+
+def main():
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--template",type=Path,default=Path(__file__).with_name("template.txt"))
+    parser.add_argument("--variables",type=Path,default=Path(__file__).with_name("variables.json"))
+    parser.add_argument("--allowed",default="question,context",help="comma-separated allowed names")
+    args=parser.parse_args()
+    try:result=render_prompt(args.template.read_text(),json.loads(args.variables.read_text()),args.allowed.split(","))
+    except (ValueError,OSError,TypeError) as exc:parser.error(str(exc))
+    print(result)
+
+if __name__ == "__main__":main()
