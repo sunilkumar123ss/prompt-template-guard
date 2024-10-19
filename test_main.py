@@ -13,4 +13,6 @@ render_prompt = _main.render_prompt
 class TemplateTests(unittest.TestCase):
     def test_simple_fields_and_escaped_braces(self):
         self.assertEqual(render_prompt("{{x}} {question}",{"question":"hello"},{"question"}),"{x} hello")
+    def test_values_are_not_reparsed(self):
+        self.assertEqual(render_prompt("{context}",{"context":"{secret}"},{"context"}),"{secret}")
 
