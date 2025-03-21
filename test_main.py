@@ -15,4 +15,8 @@ class TemplateTests(unittest.TestCase):
         self.assertEqual(render_prompt("{{x}} {question}",{"question":"hello"},{"question"}),"{x} hello")
     def test_values_are_not_reparsed(self):
         self.assertEqual(render_prompt("{context}",{"context":"{secret}"},{"context"}),"{secret}")
+    def test_attribute_index_conversion_and_spec_rejected(self):
+        for template in ["{x.__class__}","{x[0]}","{x!r}","{x:>20}","{x:{y}}","{}"]:
+            with self.subTest(template=template),self.assertRaises(ValueError):
+                render_prompt(template,{"x":"value"},{"x","y"})
 
