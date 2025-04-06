@@ -19,4 +19,8 @@ class TemplateTests(unittest.TestCase):
         for template in ["{x.__class__}","{x[0]}","{x!r}","{x:>20}","{x:{y}}","{}"]:
             with self.subTest(template=template),self.assertRaises(ValueError):
                 render_prompt(template,{"x":"value"},{"x","y"})
+    def test_missing_extra_and_malformed_fail(self):
+        for template,variables in [("{x}",{}),("text",{"x":"extra"}),("{x",{"x":"v"})]:
+            with self.assertRaises(ValueError):render_prompt(template,variables,{"x"})
 
+if __name__ == "__main__":unittest.main()
