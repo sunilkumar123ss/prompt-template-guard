@@ -4,7 +4,7 @@ This reference implementation and all of the following milestone commits were pr
 
 **Every recorded author and committer date in this timeline is synthetic. These dates are not evidence that the code was written, tested, deployed, or used professionally in the past.**
 
-This snapshot is milestone 9 of 11. It is an incomplete tutorial stage; source, fixtures, tests, the CLI, and automation are introduced progressively.
+This snapshot is milestone 10 of 11. It is an incomplete tutorial stage; source, fixtures, tests, the CLI, and automation are introduced progressively.
 
 The progression decomposes already-completed October 2026 code into meaningful additions. It is not recovered original development history. Publication time is separate from the synthetic Git timestamps.
 
@@ -21,5 +21,5 @@ The progression decomposes already-completed October 2026 code into meaningful a
 | 7 | 2025-03-21T13:58:28+05:30 | Test attribute index conversion and spec rejected (present) |
 | 8 | 2025-04-06T19:19:05+05:30 | Test missing extra and malformed fail (present) |
 | 9 | 2025-06-23T19:51:30+05:30 | Add one-command test, demonstration and CLI verification (present) |
-| 10 | 2026-03-15T10:55:30+05:30 | Run verification on the supported Python CI matrix (later stage) |
+| 10 | 2026-03-15T10:55:30+05:30 | Run verification on the supported Python CI matrix (present) |
 | 11 | 2026-06-27T14:49:51+05:30 | Document usage, limitations and the disclosed reconstructed timeline (later stage) |
